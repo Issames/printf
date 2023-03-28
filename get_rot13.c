@@ -8,7 +8,6 @@ int _rot13(va_list rot)
 {
 int a, count;
 char *s;
-
 a = count = 0;
 s = va_arg(rot, char *);
 if (s == NULL)

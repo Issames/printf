@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * ch - function to return char
  * @character: list given
