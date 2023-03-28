@@ -18,11 +18,12 @@ while (a != '\0')
 		c = 0;
 		b++;
 		a = format[b];
-		while (print_arr[c].type != NULL &&
-		       a != *(print_arr[c].type))
+		while (print_arr[c].type != NULL && a != *(print_arr[c].type))
 			c++;
 		if (print_arr[c].type != NULL)
+		{
 			count = count + print_arr[c].f(list);
+		}
 		else
 		{
 			if (a == '\0')
