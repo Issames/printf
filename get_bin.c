@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
  * _bin - function to print binary
  * @bin: list being passed
