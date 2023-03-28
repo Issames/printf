@@ -33,11 +33,6 @@ while (a != '\0')
 			count += _putchar(a);
 		}
 	}
-	else if (a == 'p')
-	{
-		count += _address(list);
-		b++;
-	}
 	else
 	{
 		count += _putchar(a);
@@ -67,7 +62,6 @@ fmt_t ops[] = {
 	{"x", _hex_l},
 	{"X", _hex_u},
 	{"R", _rot13},
-	{"p", _address},
 	{NULL, NULL}
 };
 if (format == NULL)

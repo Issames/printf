@@ -1,12 +1,7 @@
 #include "main.h"
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
-   _printf("%S\n", "Best\nSchool");
+    char *str = "Hello, World!";
+    _printf("The address of str is: %p\n", str);
     return (0);
 }
