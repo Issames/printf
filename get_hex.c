@@ -1,56 +1,5 @@
 #include "main.h"
 /**
- * _hex_str_count - counts the number of characters to represent the number in hexadecimal
- * @n: number to be converted
- * @hex: base of 16 being passed
- * @alpha: Char 'A' to 'F' or 'a' to 'f'
- * Return: number of characters needed to represent the number in hexadecimal
- */
-int _hex_str_count(unsigned int n, unsigned int hex, char alpha)
-{
-unsigned int b = n / hex;
-int count = 0;
-if (b == 0)
-{
-	return 1;
-}
-if (b < hex)
-{
-	count = 1;
-}
-else
-{
-	count = _hex_str_count(b, hex, alpha);
-}
-return count + 1;
-}
-int custom_str(va_list list)
-{
-char *str = va_arg(list, char *);
-int count = 0;
-char current;
-int i;
-if (str == NULL)
-{
-	str = "(null)";
-}
-for (i = 0; str[i]; i++)
-{
-	current = str[i];
-	if (current >= 32 && current < 127)
-	{
-		count += _putchar(current);
-	}
-	else
-	{
-		count += _putchar('\\');
-		count += _putchar('x');
-		count += _hex_str(current, 16, 'A');
-	}
-}
-return count;
-}
-/**
  * _hex_str - converts the number from base 10 to hex
  * @n: number to be converted
  * @hex: base of 16 being passed
