@@ -17,6 +17,7 @@ int _printf(const char *format, ...);
 int print_op(const char *format, fmt_t *print_arr, va_list list);
 int ch(va_list character);
 int str(va_list string);
+int _pointer(va_list pointer)
 int _int(va_list integ);
 int _ui(va_list unsign);
 int _oct(va_list octo);
