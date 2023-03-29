@@ -17,7 +17,7 @@ while (n / 2 != 0)
 	count++;
 }
 count++;
-arr = malloc(count * sizeof(int));
+arr = malloc(count *sizeof(int));
 if (arr == NULL)
 {
 	free(arr);
